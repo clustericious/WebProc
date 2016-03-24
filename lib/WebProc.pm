@@ -40,7 +40,7 @@ package WebProc::Routes {
 
 package WebProc::CpuInfo {
 
-  our $filename = "/proc/cpuinfo";
+  our $filename ||= "/proc/cpuinfo";
 
   sub get
   {
