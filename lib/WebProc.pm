@@ -13,6 +13,8 @@ package WebProc {
 package WebProc::Routes {
 
   use Clustericious::RouteBuilder;
+
+  authenticate;
   
   get '/cpuinfo' => sub {
     my($c) = @_;
