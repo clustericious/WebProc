@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Clustericious::Commands;
+
+# PODNAME: webproc
+# ABSTRACT: Web interface to /proc
+
+$ENV{MOJO_APP} ||= 'WebProc';
+Clustericious::Commands->start;
